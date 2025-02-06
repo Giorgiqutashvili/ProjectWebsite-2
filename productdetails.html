@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./productdetails.css" />
+  </head>
+  <body>
+    <section id="product-container"></section>
+
+    <div id="ratingModal" class="modal">
+      <div class="modal-content">
+        <h2>Rate this Product</h2>
+
+        <div class="input-group">
+          <input type="text" id="firstName" placeholder="First Name" required />
+          <input type="text" id="lastName" placeholder="Last Name" required />
+        </div>
+
+        <div id="star-rating">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+
+        <button onclick="submitRating()">OK</button>
+        <button onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="./productdetails.js"></script>
+  </body>
+</html>
+
+
+

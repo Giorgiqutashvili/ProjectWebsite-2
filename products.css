@@ -1,0 +1,291 @@
+* {
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.main-div {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.container1-1 {
+    width: 75% !important;
+    padding: 0% !important;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+.sect1 {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+
+.card-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: rgb(70, 70, 70) !important;
+}
+
+.card-title {
+    font-family: "Bree Serif", serif;
+    font-weight: 300%;
+    font-style: normal;
+}
+
+.btn-primary {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(4, 156, 98) !important;
+    border-radius: 35px;
+    border: none;
+    height: 37px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+    height: 41px;
+    padding: auto;
+}
+
+.btn-primary:hover {
+    background-color: rgb(5, 107, 68) !important;
+}
+
+.btn-primary:active {
+    background-color: rgb(2, 59, 24) !important;
+}
+
+.item-price {
+    color: rgb(9, 95, 9) !important;
+}
+
+.btn-danger {
+    color: white !important;
+    background-color: red !important;
+    cursor: pointer !important;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 35px !important;
+    border: none;
+    height: 37px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+    height: 41px;
+    padding: auto;
+}
+
+.btn-danger:hover {
+    background-color: rgb(122, 4, 4) !important;
+}
+
+.btn-danger:active {
+    background-color: rgb(59, 2, 2) !important;
+}
+
+.load-more {
+    border: none;
+    background-color: rgb(104, 152, 167);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px !important;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    animation: loadMore2 0.3s;
+    margin-bottom: 5px !important;
+}
+
+.load-more:hover {
+    background-color: rgb(96, 134, 146);
+    animation: loadMore1 0.3s;
+}
+
+.load-more:active {
+    background-color: rgb(83, 113, 122);
+}
+
+@keyframes loadMore1 {
+    from{
+        background-color: rgb(104, 152, 167);
+    }
+    to {
+        background-color: rgb(96, 134, 146);
+    }
+}
+
+@keyframes loadMore2 {
+    from{
+        background-color: rgb(96, 134, 146);
+    }
+    to {
+        background-color: rgb(104, 152, 167);
+    }
+}
+
+.col-md-3 {
+    background-color: rgb(166, 214, 213) !important;
+    border-radius: 15px;
+    margin-bottom: 5px !important;
+}
+
+h4 {
+    color: rgb(65, 65, 65);
+}
+
+.card-body {
+    background-color: rgb(198, 248, 247) !important;
+    text-decoration: none !important;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.main-page:hover{
+    background-color: rgb(96, 133, 145);
+}
+
+a {
+    user-select: none !important;
+    cursor: pointer !important;
+    color: rgb(48, 48, 48) !important;
+}
+
+.btn-primary{
+    color: white !important;
+}
+
+.main-page {
+    border: none;
+    background-color: rgb(104, 152, 167);
+    color: rgb(255, 255, 255) !important;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100% !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    animation: loadMore2 0.3s;
+    margin-bottom: 5px !important;
+}
+
+.a1-1 {
+    text-decoration: none !important;
+    user-select: none !important;
+    margin: 0 !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container1-1 {
+        width: 85% !important;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-3 {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .main-page {
+        font-size: 90%;
+    }
+
+    .load-more {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container1-1 {
+        width: 90% !important;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-3 {
+        width: 100% !important;
+    }
+
+    .main-page {
+        font-size: 85%;
+    }
+
+    .load-more {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-primary, .btn-danger, .load-more, .main-page {
+        font-size: 90%;
+        padding: 10px;
+    }
+
+    .card-text {
+        font-size: medium;
+    }
+
+    .card-title {
+        font-size: 1.1em;
+    }
+}
+
+
+@keyframes getCloser {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    animation: getCloser 0.6s ease-in-out;
+}
+
+.card:hover {
+    animation: getCloser 0.6s ease-in-out;
+}
+
+
+@keyframes growCard {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05); /
+    }
+}
+
+
+.card {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover {
+    animation: growCard 0.3s forwards; 
+}
