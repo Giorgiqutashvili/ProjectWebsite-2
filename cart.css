@@ -1,4 +1,5 @@
 
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f0f8ff;
@@ -165,6 +166,32 @@ body {
         width: 100%;
     }
 }
+
+.btn-success {
+    background-color: #009994 !important;
+    border: 1px solid #009994;
+    animation: btnSuccesSecondary2 0.5s forwards;
+}
+
+.btn-secondary {
+    background-color: #009994 !important;
+    border: 1px solid #009994;
+    animation: btnSuccesSecondary2 0.5s forwards;
+}
+
+.btn-success:hover{
+    background-color: #007975 !important;
+    border: 1px solid #007975;
+}
+
+.btn-secondary:hover {
+    background-color: #007975 !important;
+    border: 1px solid #007975;
+}
+
+
+
+
 
 
 

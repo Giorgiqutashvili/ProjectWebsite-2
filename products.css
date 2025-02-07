@@ -3,6 +3,75 @@
     box-sizing: border-box !important;
 }
 
+body {
+    background-color: aliceblue;
+}
+
+.main-name {
+    color: aliceblue;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.site-header {
+    width: 100% !important;
+    height: 90px !important;
+    background-color: #EC5E2A;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header2 {
+    width: 1700px !important;
+    max-width: 1700px !important;
+    height: 60px !important;
+    background-color: #f58e68;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-around !important;
+    border-radius: 15px;
+}
+
+
+
+.main-page {
+    border: none;
+    background-color:aliceblue;
+    color: rgb(207, 207, 207) !important;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px !important;
+    height: 50px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    animation: loadMore2 0.3s;
+    margin-bottom: 5px !important;
+    font-weight: 150% !important;
+    margin-top: 6px !important;
+    line-height: 17px !important;
+}
+
+.a1-1 {
+    text-decoration: none !important;
+    user-select: none !important;
+    margin: 0 !important;
+    color: rgb(117, 117, 117) !important;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 150% !important;
+}
+
 .main-div {
     width: 100% !important;
     display: flex !important;
@@ -164,26 +233,6 @@ a {
     color: white !important;
 }
 
-.main-page {
-    border: none;
-    background-color: rgb(104, 152, 167);
-    color: rgb(255, 255, 255) !important;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 100% !important;
-    font-family: 'Times New Roman', Times, serif !important;
-    animation: loadMore2 0.3s;
-    margin-bottom: 5px !important;
-}
-
-.a1-1 {
-    text-decoration: none !important;
-    user-select: none !important;
-    margin: 0 !important;
-    color: rgb(255, 255, 255) !important;
-}
-
-/* Media Queries */
 @media (max-width: 1024px) {
     .container1-1 {
         width: 85% !important;
@@ -289,3 +338,77 @@ a {
 .card:hover {
     animation: growCard 0.3s forwards; 
 }
+
+.main-page:hover {
+    background-color: rgb(228, 227, 227);
+}
+
+.col-md-3 {
+    background-color: #f77a4c !important;
+
+}
+
+.form-label {
+    color: rgb(59, 59, 59) !important;
+}
+
+.w-100 {
+    background-color: #02A6A3 !important;
+}
+
+.load-more {
+    background-color: #02A6A3 !important;
+}
+
+.w-100:hover{
+    background-color: #009994 !important;
+}
+
+.load-more:hover{
+    background-color: #009994 !important;
+}
+
+.card-body {
+    background-color: #73f5f3 !important;
+}
+
+.card {
+    border-radius: 10px !important;
+}
+
+.fa-solid {
+    font-size: 135%;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 50% !important;
+}
+
+@media (max-width: 1100px) {
+    .col-md-3 {
+        display: none;
+    }
+    #menuIcon {
+        display: block;
+    }
+}
+@media (min-width: 1101px) {
+    #menuIcon {
+        display: none;
+    }
+    .col-md-3 {
+        display: block;
+    }
+}
+
+.cart-icon {
+    display: block !important;
+    position: absolute !important;
+}
+
+.cart-a {
+    display: block !important;
+    position: relative !important; 
+}
+
